@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UI/UX Case Study — OceanAI: An AI-Driven Unified Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights.">
+  <title>OceanAI — UX Case Study</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ── Animated background particles ── -->
+  <div class="bg-particles" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       NAVIGATION
+       ══════════════════════════════════════ -->
+  <nav class="case-nav" id="case-nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="dot"></span>
+        OceanAI
+      </a>
+      <ul class="nav-links">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#design-system">Design System</a></li>
+        <li><a href="#screens">Screens</a></li>
+        <li><a href="#ai-integration">AI & ML</a></li>
+        <li><a href="#outcomes">Outcomes</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════
+       HERO SECTION
+       ══════════════════════════════════════ -->
+  <section class="hero" id="hero">
+    <div class="hero-gradient"></div>
+    <div class="hero-gradient-2"></div>
+    
+    <div class="container hero-content">
+      <div class="hero-eyebrow">
+        <span class="pulse"></span>
+        UX Case Study
+      </div>
+
+      <h1 class="hero-title">
+        Designing the<br>
+        <span class="gradient-text">Ocean Data Platform</span>
+      </h1>
+
+      <p class="hero-project-name">
+        AI-Driven Unified Data Platform for Oceanographic, Fisheries, and Molecular Biodiversity Insights
+      </p>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="label">Role</span>
+          <span class="value">UI/UX Designer</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Duration</span>
+          <span class="value">12 Weeks</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Tools</span>
+          <span class="value">Figma, FigJam</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="label">Domain</span>
+          <span class="value">Marine Science · AI/ML</span>
+        </div>
+      </div>
+
+      <a href="#overview" class="hero-cta">
+        Explore Case Study
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       OVERVIEW & PROBLEM
+       ══════════════════════════════════════ -->
+  <section id="overview">
+    <div class="container">
+      <span class="section-label reveal">01 — Overview</span>
+      <h2 class="section-title reveal">The Challenge</h2>
+      <p class="section-subtitle reveal">
+        Oceanographic data is scattered across dozens of siloed sources, forcing marine researchers to spend more time finding data than analyzing it.
+      </p>
+
+      <div class="problem-statement reveal">
+        <p>
+          Marine scientists, fisheries researchers, and biodiversity analysts currently rely on fragmented datasets spread across multiple platforms, file formats, and institutions. There is no single unified interface that brings together <strong>oceanographic measurements</strong>, <strong>species taxonomy</strong>, and <strong>otolith analysis</strong> data — let alone one powered by AI to surface the most relevant results. This fragmentation leads to duplicated effort, missed correlations, and slower scientific discovery.
+        </p>
+      </div>
+
+      <div class="overview-grid">
+        <div class="overview-card reveal">
+          <div class="icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+          </div>
+          <h3>The Problem</h3>
+          <p>
+            Oceanographic data is scattered across disparate sources. Researchers waste hours navigating between systems, manually cross-referencing datasets, and reformatting exports. The lack of a unified view means critical patterns in ocean health, species migration, and climate impact go undetected.
+          </p>
+        </div>
+        <div class="overview-card reveal">
+          <div class="icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>The Solution</h3>
+          <p>
+            Design a single, AI-integrated web platform that unifies three primary dataset categories — <strong>Oceanographic Data</strong>, <strong>Taxonomy</strong>, and <strong>Otolith</strong> — with an interactive world map for geographic navigation, intelligent AI filtering, and one-click data export capabilities.
+          </p>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row reveal stagger-children">
+        <div class="stat-card">
+          <div class="stat-number">3</div>
+          <div class="stat-label">Core Data Categories</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">4+</div>
+          <div class="stat-label">Key Screens Designed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">1</div>
+          <div class="stat-label">Unified Platform</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">AI</div>
+          <div class="stat-label">Powered Filtering</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       RESEARCH & DISCOVERY
+       ══════════════════════════════════════ -->
+  <section id="research">
+    <div class="container">
+      <span class="section-label reveal">02 — Research & Discovery</span>
+      <h2 class="section-title reveal">Understanding the Users</h2>
+      <p class="section-subtitle reveal">
+        Deep-diving into the world of marine researchers, fisheries scientists, and biodiversity analysts to uncover their pain points and workflows.
+      </p>
+
+      <div class="research-grid reveal stagger-children">
+        <div class="research-card">
+          <div class="card-number">INSIGHT 01</div>
+          <h3>Fragmented Data Sources</h3>
+          <p>
+            Researchers reported using 5–8 different platforms to gather the data needed for a single study. Temperature, salinity, taxonomy records, and otolith data lived in completely separate systems with incompatible formats.
+          </p>
+        </div>
+        <div class="research-card">
+          <div class="card-number">INSIGHT 02</div>
+          <h3>Geographic Context is Critical</h3>
+          <p>
+            Every data point in oceanography is tied to a specific location. Researchers need to navigate data spatially — selecting a region on a map and extracting all relevant datasets for that area, not scrolling through spreadsheets.
+          </p>
+        </div>
+        <div class="research-card">
+          <div class="card-number">INSIGHT 03</div>
+          <h3>Export & Collaboration Gaps</h3>
+          <p>
+            Once researchers find the data they need, exporting it into usable formats (Excel, CSV) for further analysis or collaboration is a manual, error-prone process. An AI-assisted export would save hours of reformatting.
+          </p>
+        </div>
+        <div class="research-card">
+          <div class="card-number">INSIGHT 04</div>
+          <h3>Information Overload</h3>
+          <p>
+            With vast amounts of oceanographic data available, researchers struggle to find the most relevant results. AI-powered filtering that surfaces the best matches based on research context would be transformative.
+          </p>
+        </div>
+        <div class="research-card">
+          <div class="card-number">INSIGHT 05</div>
+          <h3>Species Identification Needs</h3>
+          <p>
+            Taxonomic classification requires detailed visual and hierarchical information. Researchers need quick access to species profiles, habitat data, and distribution maps all in one view.
+          </p>
+        </div>
+        <div class="research-card">
+          <div class="card-number">INSIGHT 06</div>
+          <h3>Trend Visualization</h3>
+          <p>
+            Raw data alone isn't enough. Researchers need trend visualizations, comparison tools, and the ability to toggle between different data representations (Temperature, Salinity, Current, Chlorophyll).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       DESIGN PROCESS
+       ══════════════════════════════════════ -->
+  <section id="process">
+    <div class="container">
+      <span class="section-label reveal">03 — Design Process</span>
+      <h2 class="section-title reveal">From Discovery to Delivery</h2>
+      <p class="section-subtitle reveal">
+        A structured, iterative approach that balanced complex data requirements with an intuitive, visually immersive user experience.
+      </p>
+
+      <div class="process-timeline">
+        <div class="process-step reveal">
+          <div class="step-number">PHASE 01</div>
+          <h3>Empathize & Define</h3>
+          <p>
+            Conducted stakeholder interviews with marine biologists and data scientists to map their current workflows. Created user personas representing primary user groups: <strong>Field Researchers</strong> collecting data in the field, <strong>Lab Analysts</strong> processing samples and otolith images, and <strong>Policy Advisors</strong> who need synthesized reports. Defined the information architecture around the three primary data pillars — Oceanographic, Taxonomy, and Otolith.
+          </p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">PHASE 02</div>
+          <h3>Information Architecture</h3>
+          <p>
+            Structured the platform around a <strong>map-first interaction model</strong> — users begin by selecting a geographic region of interest, then drill into the three data categories. The navigation reflects the mental model of researchers: location → data type → specific parameters → export. Designed the AI Insight Panel as a persistent companion that provides contextual suggestions based on the current data view.
+          </p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">PHASE 03</div>
+          <h3>Visual Design & UI System</h3>
+          <p>
+            Developed a <strong>deep ocean-inspired dark theme</strong> that evokes the underwater environment while maintaining high readability for data-dense interfaces. The dark background reduces eye strain during long research sessions. Bioluminescent blue accents (#0EA5E9 → #22D3EE) guide attention. Glassmorphism panels create visual hierarchy without harsh borders. High-quality marine imagery was integrated to reinforce the domain context.
+          </p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">PHASE 04</div>
+          <h3>Prototyping & Iteration</h3>
+          <p>
+            Built high-fidelity prototypes in Figma, iterating through multiple rounds of feedback with researchers. Key iterations included: repositioning the filter panel for faster access, adding AI-generated data summaries within the export flow, and introducing tabbed views (Trend / Comparison / Raw Data) in the Oceanographic Data section to accommodate different analysis needs.
+          </p>
+        </div>
+
+        <div class="process-step reveal">
+          <div class="step-number">PHASE 05</div>
+          <h3>Handoff & Collaboration</h3>
+          <p>
+            Delivered a comprehensive design system with component specifications, interaction annotations, and responsive breakpoints. Collaborated closely with the AI/ML engineering team to define the behavior of the AI Insight Panel and the intelligent export feature that generates formatted spreadsheets from raw data.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       DESIGN SYSTEM
+       ══════════════════════════════════════ -->
+  <section id="design-system">
+    <div class="container">
+      <span class="section-label reveal">04 — Design System</span>
+      <h2 class="section-title reveal">Visual Language</h2>
+      <p class="section-subtitle reveal">
+        A cohesive design system rooted in the deep ocean — dark immersive backgrounds, bioluminescent accents, and glassmorphism for hierarchy.
+      </p>
+
+      <div class="design-system-grid">
+        <!-- Color Palette -->
+        <div class="ds-panel reveal">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+            Color Palette
+          </h3>
+          <div class="color-swatches">
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #020a18;"></div>
+              <span class="swatch-name">Deepest</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #04112b;"></div>
+              <span class="swatch-name">Deep</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #081d42;"></div>
+              <span class="swatch-name">Mid</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #0ea5e9;"></div>
+              <span class="swatch-name">Primary</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #22d3ee;"></div>
+              <span class="swatch-name">Cyan</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #38bdf8;"></div>
+              <span class="swatch-name">Accent</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #2dd4bf;"></div>
+              <span class="swatch-name">Teal</span>
+            </div>
+            <div class="swatch">
+              <div class="swatch-circle" style="background: #f0f9ff;"></div>
+              <span class="swatch-name">Text</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typography -->
+        <div class="ds-panel reveal">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7V4h16v3"/><path d="M9 20h6"/><path d="M12 4v16"/></svg>
+            Typography
+          </h3>
+          <div class="font-preview">
+            <div class="font-name">DISPLAY</div>
+            <div class="font-sample" style="font-family: 'Playfair Display', serif;">Playfair Display</div>
+            <div class="font-usage">Headlines, section titles, emphasis</div>
+          </div>
+          <div class="font-preview">
+            <div class="font-name">BODY</div>
+            <div class="font-sample" style="font-family: 'Inter', sans-serif; font-weight: 400;">Inter — Regular 400</div>
+            <div class="font-usage">Body text, descriptions, navigation</div>
+          </div>
+          <div class="font-preview">
+            <div class="font-name">MONO</div>
+            <div class="font-sample" style="font-family: 'JetBrains Mono', monospace; font-size: 1.2rem;">JetBrains Mono</div>
+            <div class="font-usage">Labels, metadata, data values</div>
+          </div>
+        </div>
+
+        <!-- Components -->
+        <div class="ds-panel reveal">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+            Key Components
+          </h3>
+          <div class="component-list">
+            <div class="component-item">
+              <div class="component-icon">🗺️</div>
+              <div class="component-info">
+                <div class="comp-name">Interactive Map</div>
+                <div class="comp-desc">Geographic navigation with clickable regions</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">🤖</div>
+              <div class="component-info">
+                <div class="comp-name">AI Insight Panel</div>
+                <div class="comp-desc">Context-aware AI assistant for data filtering</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">📊</div>
+              <div class="component-info">
+                <div class="comp-name">Data Category Cards</div>
+                <div class="comp-desc">Toggle between Oceanographic, Taxonomy, Otolith</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">📤</div>
+              <div class="component-info">
+                <div class="comp-name">Export Engine</div>
+                <div class="comp-desc">AI-formatted Excel/CSV export with one click</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Design Principles -->
+        <div class="ds-panel reveal">
+          <h3>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            Design Principles
+          </h3>
+          <div class="component-list">
+            <div class="component-item">
+              <div class="component-icon">🌊</div>
+              <div class="component-info">
+                <div class="comp-name">Ocean-First Aesthetic</div>
+                <div class="comp-desc">Deep blues, bioluminescence, marine imagery</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">🔍</div>
+              <div class="component-info">
+                <div class="comp-name">Data Accessibility</div>
+                <div class="comp-desc">Complex data made navigable and understandable</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">✨</div>
+              <div class="component-info">
+                <div class="comp-name">Glassmorphism Hierarchy</div>
+                <div class="comp-desc">Frosted glass panels for layered visual depth</div>
+              </div>
+            </div>
+            <div class="component-item">
+              <div class="component-icon">⚡</div>
+              <div class="component-info">
+                <div class="comp-name">Efficient Workflows</div>
+                <div class="comp-desc">Minimal clicks from discovery to data export</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       SCREEN WALKTHROUGHS
+       ══════════════════════════════════════ -->
+  <section id="screens">
+    <div class="container">
+      <span class="section-label reveal">05 — Screen Walkthroughs</span>
+      <h2 class="section-title reveal">Key Screens</h2>
+      <p class="section-subtitle reveal">
+        A detailed look at the four primary screens that form the backbone of the OceanAI platform experience.
+      </p>
+
+      <div class="screen-showcase">
+
+        <!-- Screen 1: Landing Page -->
+        <div class="screen-item">
+          <div class="screen-image-wrap reveal-left">
+            <span class="screen-badge">Landing Page</span>
+            <img src="images/landing.png" alt="OceanAI Landing Page — Hero section with AI-driven unified Ocean Data Platform headline and bioluminescent sea turtle illustration">
+          </div>
+          <div class="screen-details reveal-right">
+            <div class="screen-number">SCREEN 01 / 04</div>
+            <h3>Landing Page</h3>
+            <p>
+              The first impression sets the tone — a bold hero section with a commanding headline announces the platform's purpose. The bioluminescent sea turtle illustration grounds the user in the marine domain while subtly signaling the AI-powered nature of the platform through its wireframe-digital aesthetic.
+            </p>
+            <div class="screen-features">
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Clear value proposition: "AI driven unified Ocean Data Platform"</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Navigation with Features, Developers, Company, Blog & Changelog</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Prominent "Get Started" and "Join Now" CTAs for quick onboarding</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Deep ocean dark theme with particle-like star background</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Hero Section</span>
+              <span class="tag">Onboarding</span>
+              <span class="tag">Brand Identity</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 2: Dashboard -->
+        <div class="screen-item">
+          <div class="screen-image-wrap reveal-right">
+            <span class="screen-badge">Dashboard</span>
+            <img src="images/dashboard.png" alt="OceanAI Dashboard — AI Insight Panel with interactive India map, three data category toggles, and filter controls">
+          </div>
+          <div class="screen-details reveal-left">
+            <div class="screen-number">SCREEN 02 / 04</div>
+            <h3>AI-Powered Dashboard</h3>
+            <p>
+              The central hub of the platform — a map-centric dashboard where researchers begin their exploration. The AI Insight Panel on the left provides intelligent, scenario-based data suggestions. Three category toggles (Oceanographic, Taxonomy, Otolith) let users switch data contexts instantly. The filter panel on the right allows multi-parameter queries.
+            </p>
+            <div class="screen-features">
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>AI Insight Panel with "Generate" button for context-aware suggestions</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Interactive world map for region-based data exploration</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Three data category toggles: Oceanographic, Taxonomy, Otolith</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Advanced filter panel — Temperature, Salinity, Date Range, Region, Species</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Left sidebar navigation with icons for quick access to key sections</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Map Navigation</span>
+              <span class="tag">AI Insights</span>
+              <span class="tag">Data Filtering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 3: Oceanographic Data -->
+        <div class="screen-item">
+          <div class="screen-image-wrap reveal-left">
+            <span class="screen-badge">Oceanographic Data</span>
+            <img src="images/oceanographic.png" alt="Oceanographic Data page — Temperature/Salinity/Current/Chlorophyll filters with India seas map and data visualization panel">
+          </div>
+          <div class="screen-details reveal-right">
+            <div class="screen-number">SCREEN 03 / 04</div>
+            <h3>Oceanographic Data View</h3>
+            <p>
+              A dedicated deep-dive into oceanographic measurements. This screen enables researchers to explore bathymetric and environmental data across parameters like Temperature, Salinity, Current, and Chlorophyll. The right panel provides togglable views — Trend, Comparison, and Raw Data — for flexible analysis. The "Export Data" button triggers the AI export engine.
+            </p>
+            <div class="screen-features">
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Parameter pills: Temperature, Salinity, Current, Chlorophyll</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Regional map focused on Indian Ocean with labeled seas</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Data visualization panel with Trend / Comparison / Raw Data tabs</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>"Export Data" button for AI-generated Excel/CSV sheets</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Marine imagery (jellyfish, coral) reinforcing the ocean context</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Data Visualization</span>
+              <span class="tag">Export</span>
+              <span class="tag">Filtering</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 4: Taxonomy -->
+        <div class="screen-item">
+          <div class="screen-image-wrap reveal-right">
+            <span class="screen-badge">Taxonomy</span>
+            <img src="images/taxonomy.png" alt="Taxonomy page — White Betta species profile with scientific classification hierarchy and habitat/distribution cards">
+          </div>
+          <div class="screen-details reveal-left">
+            <div class="screen-number">SCREEN 04 / 04</div>
+            <h3>Taxonomy Explorer</h3>
+            <p>
+              The taxonomy page transforms species classification into a visually rich, explorable experience. The left column presents the hierarchical classification system (Kingdom → Phylum → Genus → Family), while the center showcases a high-quality species image. The right column delivers a comprehensive species profile with habitat data, distribution details, and quick-access action cards.
+            </p>
+            <div class="screen-features">
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Hierarchical taxonomy table: Kingdom, Phylum, Genus, Family</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>High-quality species imagery with detailed description</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Profile, Habitat, and Distribution info cards</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>"Enter Link of Image" for AI-powered species identification</span>
+              </div>
+              <div class="screen-feature">
+                <span class="check">✓</span>
+                <span>Interactive highlighted terms for cross-referencing</span>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span class="tag">Species Profiles</span>
+              <span class="tag">Classification</span>
+              <span class="tag">Biodiversity</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       AI INTEGRATION
+       ══════════════════════════════════════ -->
+  <section id="ai-integration">
+    <div class="container">
+      <span class="section-label reveal">06 — AI & ML Integration</span>
+      <h2 class="section-title reveal">Intelligence by Design</h2>
+      <p class="section-subtitle reveal">
+        How artificial intelligence and machine learning capabilities were woven into the UX — not as an afterthought, but as a core design pillar.
+      </p>
+
+      <div class="ai-features-grid reveal stagger-children">
+        <div class="ai-feature-card">
+          <div class="ai-icon">🧠</div>
+          <h3>AI Insight Panel</h3>
+          <p>
+            A persistent, context-aware panel that analyzes the current data view and generates scenario-based insights. Rather than forcing researchers to formulate complex queries, the AI surfaces relevant correlations, anomalies, and patterns. The "Generate" button lets users request deeper analysis on demand — keeping the human in control while the AI handles discovery.
+          </p>
+        </div>
+        <div class="ai-feature-card">
+          <div class="ai-icon">🔍</div>
+          <h3>Intelligent Filtering</h3>
+          <p>
+            The platform's AI doesn't just filter — it <em>prioritizes</em>. When researchers set parameters (Temperature, Salinity, Region, Species, Date Range), the AI ranks results by relevance to the research context, not just by date or alphabetical order. This means the most scientifically valuable data surfaces first, dramatically reducing time-to-insight.
+          </p>
+        </div>
+        <div class="ai-feature-card">
+          <div class="ai-icon">📊</div>
+          <h3>AI-Powered Export</h3>
+          <p>
+            The export functionality goes beyond simple data dumps. The AI structures the output into clean, formatted spreadsheets with proper headers, data types, and even summary statistics. Researchers get publication-ready datasets with a single click — the "Export Data" button triggers the AI to compile and format the selected data into Excel or CSV format.
+          </p>
+        </div>
+        <div class="ai-feature-card">
+          <div class="ai-icon">🐠</div>
+          <h3>Species Image Recognition</h3>
+          <p>
+            The "Enter Link of Image" feature on the Taxonomy page allows researchers to paste a URL to a species image, and the AI identifies the organism, auto-filling the taxonomy classification, habitat data, and distribution information. This bridges the gap between field photography and database identification.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       OUTCOMES & LEARNINGS
+       ══════════════════════════════════════ -->
+  <section id="outcomes">
+    <div class="container">
+      <span class="section-label reveal">07 — Outcomes & Reflection</span>
+      <h2 class="section-title reveal">Impact & Learnings</h2>
+      <p class="section-subtitle reveal">
+        The measurable outcomes of unifying scattered ocean data into a single AI-powered platform, and the design lessons learned along the way.
+      </p>
+
+      <div class="outcomes-wrap">
+        <ul class="outcome-list reveal stagger-children">
+          <li>
+            <div class="outcome-icon">🌐</div>
+            <div class="outcome-text">
+              <h4>Unified Data Experience</h4>
+              <p>Three previously siloed data domains (Oceanographic, Taxonomy, Otolith) brought together under a single, navigable interface with consistent design patterns.</p>
+            </div>
+          </li>
+          <li>
+            <div class="outcome-icon">🗺️</div>
+            <div class="outcome-text">
+              <h4>Map-First Navigation</h4>
+              <p>The geographic map as the primary interaction point mirrors how researchers naturally think about ocean data — by location first, parameters second.</p>
+            </div>
+          </li>
+          <li>
+            <div class="outcome-icon">⚡</div>
+            <div class="outcome-text">
+              <h4>Reduced Research Friction</h4>
+              <p>From searching 5–8 platforms to using a single dashboard with AI-assisted filtering, the design significantly streamlines the research workflow.</p>
+            </div>
+          </li>
+          <li>
+            <div class="outcome-icon">📤</div>
+            <div class="outcome-text">
+              <h4>One-Click AI Export</h4>
+              <p>AI-formatted data exports eliminate hours of manual reformatting, giving researchers publication-ready datasets instantly.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="learnings-card reveal">
+          <h3>Key Takeaways</h3>
+          <ul>
+            <li>Designing for scientific users requires deep empathy — their workflows are complex, and oversimplifying the interface can actually reduce usability. The challenge is making complexity navigable, not hidden.</li>
+            <li>Dark themes aren't just aesthetic choices in data platforms — they reduce eye strain during extended research sessions and provide excellent contrast for data visualizations and marine imagery.</li>
+            <li>AI integration works best when it augments the researcher's expertise rather than replacing it. The "Generate" and "Filter" paradigm keeps the human in control while the AI handles the heavy lifting of data correlation.</li>
+            <li>Geographic context is the natural entry point for oceanographic data. Starting with a map and drilling down into parameters aligns with the researcher's mental model and reduces cognitive load.</li>
+            <li>Visual consistency across the three data categories (Oceanographic, Taxonomy, Otolith) builds user confidence — same interaction patterns, different data, minimal learning curve.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════ -->
+  <footer class="case-footer">
+    <div class="container">
+      <div class="footer-cta reveal">
+        <h2>Thank you for reading.</h2>
+        <p>This case study showcases the UX design process behind the OceanAI platform — unifying scattered oceanographic data into one intelligent, researcher-centric experience.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>OceanAI — UX Case Study · UI/UX Design · 2025</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
